@@ -1,6 +1,3 @@
-idf_component_register(SRCS "FanControl.c" "infrared/ir_nec.c"
-                    INCLUDE_DIRS "." "infrared"
-                    REQUIRES driver
-
-                    )
-
+idf_component_register(SRCS "FanControl.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES infrared wifi http nvs_flash esp_pm)
