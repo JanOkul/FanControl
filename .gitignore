@@ -1,6 +1,0 @@
-*.vscode
-
-esp/FanControl/build/
-esp/FanControl/sdkconfig
-esp/FanControl/sdkconfig.old
-esp/FanControl/main/WifiConfig.h

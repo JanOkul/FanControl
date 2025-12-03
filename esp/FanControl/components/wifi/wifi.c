@@ -45,9 +45,15 @@ void initialise_wifi(void)
 
 void initialise_mdns(void)
 {
-    ESP_ERROR_CHECK(mdns_init());
-    ESP_ERROR_CHECK(mdns_hostname_set("fancontroller"));
-    ESP_ERROR_CHECK(mdns_instance_name_set("Fan Controller"));
+    mdns_init();
+    mdns_hostname_set("fancontroller");
+    mdns_instance_name_set("Fan Controller");
+    mdns_service_set_ttl("_fan", "_tcp", 60);
+    if (mdns_service_add(NULL, "_fan", "_tcp", 80, NULL, 0) == ESP_OK) {
+        ESP_LOGI(TAG, "mDNS IP discovery service added");
+    } else {
+        ESP_LOGI(TAG, "mDNS service add failed.");
+    }
     ESP_LOGI(TAG, "mDNS started with hostname: fancontroller.local");
 }
 

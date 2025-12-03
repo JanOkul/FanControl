@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="controller_settings"
+        android:title="Fan Controller Settings">
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="power_path"
+            android:title="URL for Power Toggle"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="speed_down_path"
+            android:title="URL for Speed Down"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="speed_up_path"
+            android:title="URL for Speed Up"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="timer_down_path"
+            android:title="URL for Timer Down"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="timer_up_path"
+            android:title="URL for Timer Up"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="swing_side_path"
+            android:title="URL for Swing Side"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="swing_up_path"
+            android:title="URL for Swing Up"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

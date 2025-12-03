@@ -1,0 +1,39 @@
+{
+    "files.associations": {
+        "bluetooth.h": "c",
+        "ledc.h": "c",
+        "nvs_flash.h": "c",
+        "nimble_port_freertos.h": "c",
+        "esp_rom_sys.h": "c",
+        "infrared.h": "c",
+        "freertos.h": "c",
+        "wificonfig.h": "c",
+        "http.h": "c",
+        "esp_mac.h": "c",
+        "esp_log.h": "c",
+        "task.h": "c",
+        "wifi.h": "c"
+    },
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "C:\\Users\\canok\\.espressif\\tools\\openocd-esp32\\v0.12.0-esp32-20240318/openocd-esp32/share/openocd/scripts",
+        "IDF_CCACHE_ENABLE": "1",
+        "ESP_ROM_ELF_DIR": "C:\\Users\\canok\\.espressif\\tools\\esp-rom-elfs\\20240305/",
+        "IDF_TARGET": "esp32c6"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32c6-builtin.cfg"
+    ],
+    "idf.flashType": "UART",
+    "C_Cpp.errorSquiggles": "enabled",
+    "idf.portWin": "COM11",
+
+    "cmake.configureOnOpen": false,
+    "cmake.automaticReconfigure": false,
+    "terminal.integrated.env.windows": {
+        "IDF_PATH": "C:\\Users\\canok\\esp\\esp-idf-v5.5.1",
+        "PATH": "${env:PATH};C:\\Users\\canok\\esp\\esp-idf-v5.5.1\\tools"
+    },
+    "idf.espIdfPathWin": "c:\\Users\\canok\\esp\\esp-idf-v5.5.1",
+    "idf.toolsPathWin": "C:\\Users\\canok\\.espressif",
+    "idf.pythonInstallPath": "C:\\Users\\canok\\.espressif\\tools\\idf-python\\3.11.2\\python.exe"
+}

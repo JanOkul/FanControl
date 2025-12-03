@@ -1,0 +1,2 @@
+#define WIFI_SSID "BT-NNF63Q"
+#define WIFI_PASSWORD "kdfCHJKG7yGrur"
